@@ -49,6 +49,7 @@ providerconfig:
   dns:
     type: (( landscape.dns.type ))
     credentials: (( landscape.dns.credentials ))
+    hostedZoneIDs: (( landscape.dns.hostedZoneIDs ))
   iaas: (( read(__ctx.DIR "/../provider/" v.type "/seed.yaml", "import") ))
   config: (( v ))
   isBaseCluster: false

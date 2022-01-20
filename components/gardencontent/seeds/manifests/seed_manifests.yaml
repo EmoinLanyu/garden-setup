@@ -110,6 +110,7 @@ ingressTemplate:
         secretRef:
           name: (( configValues.secretname "-ingress-dns-secret" ))
           namespace: (( configValues.namespace ))
+        zones: (( configValues.dns.hostedZoneIDs ))
     ingress:
       domain: (( configValues.seed.ingressdomain ))
       controller:
